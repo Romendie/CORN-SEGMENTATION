@@ -567,4 +567,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ }),
 
 /***/ "./node_modules/@tensorflow/tfjs-converter/dist/operations/op_list/image.js":
-/*!*****
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-converter/dist/operations/op_list/image.js ***!
+  \**********************************************************************************/
+/*! exports provided: json */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"json\", function() { return json; });\n/**\n * @license\n * Copyright 2018 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\nconst json = [\n    {\n        'tfOpName': 'ResizeBilinear',\n        'category': 'image',\n        'inputs': [\n            { 'start': 0, 'name': 'images', 'type': 'tensor' },\n            { 'start': 1, 'name': 'size', 'type': 'number[]' },\n        ],\n        'attrs': [\n            { 'tfName': 'align_corners', 'name': 'alignCorners', 'type': 'bool' },\n            { 'tfName': 'T', 'name': 'dtype', 'type': 'dtype', 'notSupported': true }\n        ]\n    },\n    {\n        'tfOpName': 'ResizeNearestNeighbor',\n        'category': 'image',\n        'inputs': [\n            { 'start': 0, 'name': 'images', 'type': 'tensor' },\n            { 'start': 1, 'name': 'size', 'type': 'number[]' },\n        ],\n        'attrs': [\n            { 'tfName': 'align_corners', 'name': 'alignCorners', 'type': 'bool' },\n            { 'tfName': 'T', 'name': 'dtype', 'type': 'dtype', 'notSupported': true }\n        ]\n    },\n    {\n        'tfOpName': 'CropAndResize',\n        'category': 'image',\n        'inputs': [\n            { 'start': 0, 'name': 'image', 'type': 'tensor' },\n            { 'start': 1, 'name': 'boxes', 'type': 'tensor' },\n            { 'start': 2, 'name': 'boxInd', 'type': 'tensor' },\n            { 'start': 3, 'name': 'cropSize', 'type': 'number[]' },\n        ],\n        'attrs': [\n            { 'tfName': 'method', 'name': 'method', 'type': 'string' }, {\n                'tfName': 'extrapolation_value',\n                'name': 'extrapolationValue',\n                'type': 'number'\n            }\n        ]\n    }\n];\n//# sourceMappingURL=image.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-converter/dist/operations/op_list/image.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-converter/dist/operations/op_list/logical.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-converter/dist/operations/op_list/logical.js ***!
+  \************************************************************************************/
+/*! exports provided: json */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"json\", function() { return json; });\n/**\n * @license\n * Copyright 2018 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use 
