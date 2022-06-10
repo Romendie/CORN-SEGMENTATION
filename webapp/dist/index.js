@@ -806,4 +806,24 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./node_modules/@tensorflow/tfjs-core/dist/backends/where_impl.js
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/backends/where_impl.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/backends/where_impl.js ***!
+  \************************************************************************/
+/*! exports provided: whereImpl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"whereImpl\", function() { return whereImpl; });\n/* harmony import */ var _ops_array_ops__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ops/array_ops */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/array_ops.js\");\n/**\n * @license\n * Copyright 2018 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n/** An implementation of the Where kernel shared between cpu and webgl */\n\nfunction whereImpl(condShape, condVals) {\n    const indices = [];\n    for (let i = 0; i < condVals.length; i++) {\n        if (condVals[i]) {\n            indices.push(i);\n        }\n    }\n    const inBuffer = Object(_ops_array_ops__WEBPACK_IMPORTED_MODULE_0__[\"buffer\"])(condShape, 'int32');\n    const out = Object(_ops_array_ops__WEBPACK_IMPORTED_MODULE_0__[\"buffer\"])([indices.length, condShape.length], 'int32');\n    for (let i = 0; i < indices.length; i++) {\n        const loc = inBuffer.indexToLoc(indices[i]);\n        const offset = i * condShape.length;\n        out.values.set(loc, offset);\n    }\n    return out.toTensor();\n}\n//# sourceMappingURL=where_impl.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/backends/where_impl.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/browser_util.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/browser_util.js ***!
+  \*****************************************************************/
+/*! exports provided: nextFrame */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(setImmediate) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"nextFrame\", function() { return nextFrame; });\n/**\n * @license\n * Copyright 2017 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\nconst delayCallback = (() => {\n    if (typeof requestAnimationFrame !== 'undefined') {\n        return requestAnimationFrame;\n    }\n    else if (t
