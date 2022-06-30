@@ -1142,4 +1142,24 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./node_modules/@tensorflo
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/gradients/Identity_grad.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/gradients/Identity_grad.js ***!
+  \****************************************************************************/
+/*! exports provided: identityGradConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"identityGradConfig\", function() { return identityGradConfig; });\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/**\n * @license\n * Copyright 2020 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\nconst identityGradConfig = {\n    kernelName: _kernel_names__WEBPACK_IMPORTED_MODULE_0__[\"Identity\"],\n    gradFunc: (dy) => {\n        return { x: () => dy.toFloat() };\n    }\n};\n//# sourceMappingURL=Identity_grad.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/gradients/Identity_grad.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/gradients/LRN_grad.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/gradients/LRN_grad.js ***!
+  \***********************************************************************/
+/*! exports provided: lrnGradConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"lrnGradConfig\", function() { return lrnGradConfig; });\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/* harmony import */ var _ops_local_response_normalization_backprop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ops/local_response_normalization_backprop */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/local_response_normalization_backprop.js\");\n/**\n * @license\n * Copyright 2020 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\nconst lrnGradConfig = {\n    kernelName: _kernel_na
