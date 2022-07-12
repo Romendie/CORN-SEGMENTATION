@@ -1361,4 +1361,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ "./node_modules/@tensorflow/tfjs-core/dist/gradients/Square_grad.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/@tensorflow/tfjs-core/dist/gradients/Square_grad.js ***!
-  \*********************************************************
+  \**************************************************************************/
+/*! exports provided: squareGradConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"squareGradConfig\", function() { return squareGradConfig; });\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/* harmony import */ var _ops_mul__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ops/mul */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/mul.js\");\n/**\n * @license\n * Copyright 2019 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\nconst squareGradConfig = {\n    kernelName: _kernel_names__WEBPACK_IMPORTED_MODULE_0__[\"Square\"],\n    inputsToSave: ['x'],\n    gradFunc: (dy, saved) => {\n        const [x] = saved;\n        return { x: () => Object(_ops_mul__WEBPACK_IMPORTED_MODULE_1__[\"mul\"])(dy, Object(_ops_mul__WEBPACK_IMPORTED_MODULE_1__[\"mul\"])(x.toFloat(), 2)) };\n    }\n};\n//# sourceMappingURL=Square_grad.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/gradients/Square_grad.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/gradients/SquaredDifference_grad.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/gradients/SquaredDifference_grad.js ***!
+  \*************************************************************************************/
+/*! exports provided: squaredDifferenceGradConfig */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"squaredDifferenceGradConfig\", function() { return squaredDifferenceGradConfig; });\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/* harmony import */ var _ops_mul__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ops/mul */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/mul.js\");\n/* harmony import */ var _ops_sub__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ops/sub */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/sub.js\");\n/* harmony import */ var _ops_tensor_ops__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ops/tensor_ops */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/tensor_ops.js\");\n/**\n * @license\n * Copyright 2020 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF AN
