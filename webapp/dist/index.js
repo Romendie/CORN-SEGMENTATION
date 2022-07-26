@@ -1555,4 +1555,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
   !*** ./node_modules/@tensorflow/tfjs-core/dist/io/types.js ***!
   \*************************************************************/
 /*! exports provided: DTYPE_VALUE_SIZE_MAP */
-/**
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DTYPE_VALUE_SIZE_MAP\", function() { return DTYPE_VALUE_SIZE_MAP; });\n/**\n * @license\n * Copyright 2018 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n/* Type definitions for exporting and importing of models. */\n/**\n * A map from Tensor dtype to number of bytes per element of the Tensor.\n */\nconst DTYPE_VALUE_SIZE_MAP = {\n    'float32': 4,\n    'float16': 2,\n    'int32': 4,\n    'uint16': 2,\n    'uint8': 1,\n    'bool': 1,\n    'complex64': 8\n};\n//# sourceMappingURL=types.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/io/types.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/io/weights_loader.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/io/weights_loader.js ***!
+  \**********************************************************************/
+/*! exports provided: loadWeightsAsArrayBuffer, loadWeights, weightsLoaderFactory */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loadWeightsAsArrayBuffer\", function() { return loadWeightsAsArrayBuffer; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loadWeights\", function() { return loadWeights; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"weightsLoaderFactory\", function() { return weightsLoaderFactory; });\n/* harmony import */ var _environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../environment */ \"./node_modules/@tensorflow/tfjs-core/dist/environment.js\");\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ \"./node_modules/@tensorflow/tfjs-core/dist/util.js\");\n/* harmony import */ var _io_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./io_utils */ \"./node_modules/@tensorflow/tfjs-core/dist/io/io_utils.js\");\n/* harmony import */ var _progress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./progress */ \"./node_modules/@tensorflow/tfjs-core/dist/io/progress.js\");\n/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./types */ \"./node_modules/@tensorflow/tfjs-core/dist/io/types.js\");\n/**\n * @license\n * Copyright 2018 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either e
