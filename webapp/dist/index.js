@@ -2150,4 +2150,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./nod
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_filter.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_filter.js ***!
+  \************************************************************************************************/
+/*! exports provided: depthwiseConv2dNativeBackpropFilter */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"depthwiseConv2dNativeBackpropFilter\", function() { return depthwiseConv2dNativeBackpropFilter; });\n/* harmony import */ var _engine__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../engine */ \"./node_modules/@tensorflow/tfjs-core/dist/engine.js\");\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/* harmony import */ var _array_ops__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./array_ops */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/array_ops.js\");\n/* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./operation */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/operation.js\");\n/**\n * @license\n * Copyright 2020 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n\n\nfunction depthwiseConv2dNativeBackpropFilter_(x, dy, filterShape, convInfo) {\n    let x4D = x;\n    if (x.rank === 3) {\n        x4D = Object(_array_ops__WEBPACK_IMPORTED_MODULE_2__[\"reshape\"])(x, [1, x.shape[0], x.shape[1], x.shape[2]]);\n    }\n    let dy4D = dy;\n    if (dy4D.rank === 3) {\n        dy4D = Object(_array_ops__WEBPACK_IMPORTED_MODULE_2__[\"reshape\"])(dy, [1, dy.shape[0], dy.shape[1], dy.shape[2]]);\n    }\n    const forward = backend => backend.depthwiseConv2DDerFilter(x4D, dy4D, convInfo);\n    const inputs = { x: x4D, dy: dy4D };\n    return _engine__WEBPACK_IMPORTED_MODULE_0__[\"ENGINE\"].runKernelFunc(forward, inputs, null, _kernel_names__WEBPACK_IMPORTED_MODULE_1__[\"DepthwiseConv2dNativeBackpropFilter\"]);\n}\nconst depthwiseConv2dNativeBackpropFilter = Object(_operation__WEBPACK_IMPORTED_MODULE_3__[\"op\"])({ depthwiseConv2dNativeBackpropFilter_ });\n//# sourceMappingURL=depthwise_conv2d_native_backprop_filter.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_filter.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_input.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/depthwise_conv2d_native_backprop_input.js ***!
+  \***********************************************************************************************/
+/*! exports provided: depthwiseConv2dNativeBackpropInput */
+/***/ (function(module, __webpack_expo
