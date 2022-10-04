@@ -2806,4 +2806,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pad1d\", function() { return pad1d; });\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util */ \"./node_
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pad1d\", function() { return pad1d; });\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util */ \"./node_modules/@tensorflow/tfjs-core/dist/util.js\");\n/* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./operation */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/operation.js\");\n/* harmony import */ var _pad__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pad */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/pad.js\");\n\n\n\n/**\n * Pads a `tf.Tensor1D` with a given value and paddings. See `pad` for details.\n */\nfunction pad1d_(x, paddings, constantValue = 0) {\n    Object(_util__WEBPACK_IMPORTED_MODULE_0__[\"assert\"])(paddings.length === 2, () => 'Invalid number of paddings. Must be length of 2.');\n    return Object(_pad__WEBPACK_IMPORTED_MODULE_2__[\"pad\"])(x, [paddings], constantValue);\n}\nconst pad1d = Object(_operation__WEBPACK_IMPORTED_MODULE_1__[\"op\"])({ pad1d_ });\n//# sourceMappingURL=pad1d.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/ops/pad1d.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/pad2d.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/pad2d.js ***!
+  \**************************************************************/
+/*! exports provided: pad2d */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pad2d\", function() { return pad2d; });\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util */ \"./node_modules/@tensorflow/tfjs-core/dist/util.js\");\n/* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./operation */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/operation.js\");\n/* harmony import */ var _pad__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pad */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/pad.js\");\n\n\n\n/**\n * Pads a `tf.Tensor2D` with a given value and paddings. See `pad` for details.\n */\nfunction pad2d_(x, paddings, constantValue = 0) {\n    Object(_util__WEBPACK_IMPORTED_MODULE_0__[\"assert\"])(paddings.length === 2 && paddings[0].length === 2 &&\n        paddings[1].length === 2, () => 'Invalid number of paddings. Must be length of 2 each.');\n    return Object(_pad__WEBPACK_IMPORTED_MODULE_2__[\"pad\"])(x, paddings, constantValue);\n}\nconst pad2d = Object(_operation__WEBPACK_IMPORTED_MODULE_1__[\"op\"])({ pad2d_ });\n//# sourceMappingURL=pad2d.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/ops/pad2d.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/pad3d.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/pad3d.js ***!
+  \**************************************************************/
+/*! exports provided: pad3d */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"pad3d\", function() { return pad3d; });\n/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util */ \"./node_modules/@tensorflow/tfjs-core/dist/util.js\");\n/* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./operation */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/operation.js\");\n/* harmony import */ var _pad__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pad */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/pad.js\");\n\n\n\n/**\n * Pads a `tf.Tensor3D` with a given value and padd
