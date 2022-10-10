@@ -2943,4 +2943,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ }),
 
 /***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/real.js":
-/*!**********************
+/*!*************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/real.js ***!
+  \*************************************************************/
+/*! exports provided: real */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"real\", function() { return real; });\n/* harmony import */ var _engine__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../engine */ \"./node_modules/@tensorflow/tfjs-core/dist/engine.js\");\n/* harmony import */ var _kernel_names__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../kernel_names */ \"./node_modules/@tensorflow/tfjs-core/dist/kernel_names.js\");\n/* harmony import */ var _tensor_util_env__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tensor_util_env */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor_util_env.js\");\n/* harmony import */ var _operation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./operation */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/operation.js\");\n/**\n * @license\n * Copyright 2020 Google Inc. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n\n\n/**\n * Returns the real part of a complex (or real) tensor.\n *\n * Given a tensor input, this operation returns a tensor of type float that is\n * the real part of each element in input considered as a complex number.\n *\n * If the input is real, it simply makes a clone.\n *\n * ```js\n * const x = tf.complex([-2.25, 3.25], [4.75, 5.75]);\n * tf.real(x).print();\n * ```\n */\n/** @doc {heading: 'Tensors', subheading: 'Creation'} */\nfunction real_(input) {\n    const $input = Object(_tensor_util_env__WEBPACK_IMPORTED_MODULE_2__[\"convertToTensor\"])(input, 'input', 'real');\n    const forward = (backend) => {\n        return backend.real($input);\n    };\n    const inputs = { input: $input };\n    return _engine__WEBPACK_IMPORTED_MODULE_0__[\"ENGINE\"].runKernelFunc(forward, inputs, null /* gradient */, _kernel_names__WEBPACK_IMPORTED_MODULE_1__[\"Real\"]);\n}\nconst real = Object(_operation__WEBPACK_IMPORTED_MODULE_3__[\"op\"])({ real_ });\n//# sourceMappingURL=real.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/ops/real.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/ops/reduce_util.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/ops/reduce_util.js ***!
+  \********************************************************************/
+/*! exports provided: PARALLELIZE_THRESHOLD, computeOptimalWindowSize */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PARALLELIZE_THRESHOLD\", function() { return PARALLELIZE_THRESHOLD; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"computeOptimal
