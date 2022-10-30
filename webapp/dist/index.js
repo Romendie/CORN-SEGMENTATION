@@ -3550,4 +3550,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_broadcast_to__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/broadcast_to */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/broadcast_to.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for th
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_broadcast_to__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/broadcast_to */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/broadcast_to.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.broadcastTo = function (shape) {\n    this.throwIfDisposed();\n    return Object(_ops_broadcast_to__WEBPACK_IMPORTED_MODULE_0__[\"broadcastTo\"])(this, shape);\n};\n//# sourceMappingURL=broadcast_to.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/broadcast_to.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/concat.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/concat.js ***!
+  \******************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_concat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/concat */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/concat.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.concat = function (x, axis) {\n    this.throwIfDisposed();\n    if (x instanceof _tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"]) {\n        x = [x];\n    }\n    return Object(_ops_concat__WEBPACK_IMPORTED_MODULE_0__[\"concat\"])([this, ...x], axis);\n};\n//# sourceMappingURL=concat.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/concat.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv1d.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv1d.js ***!
+  \******************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_conv1d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/conv1d */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/conv1d.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under
