@@ -3574,4 +3574,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_conv1d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/conv1d */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/conv1d.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_conv1d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/conv1d */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/conv1d.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.conv1d = function (filter, stride, pad, dataFormat, dilation, dimRoundingMode) {\n    this.throwIfDisposed();\n    return Object(_ops_conv1d__WEBPACK_IMPORTED_MODULE_0__[\"conv1d\"])(this, filter, stride, pad, dataFormat, dilation, dimRoundingMode);\n};\n//# sourceMappingURL=conv1d.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv1d.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv2d.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv2d.js ***!
+  \******************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_conv2d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/conv2d */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/conv2d.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.conv2d = function (filter, strides, pad, dataFormat, dilations, dimRoundingMode) {\n    this.throwIfDisposed();\n    return Object(_ops_conv2d__WEBPACK_IMPORTED_MODULE_0__[\"conv2d\"])(this, filter, strides, pad, dataFormat, dilations, dimRoundingMode);\n};\n//# sourceMappingURL=conv2d.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv2d.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv2d_transpose.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/conv2d_transpose.js ***!
+  \****************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_conv2d_transpose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/conv2d_transpose */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/conv2d_transpose.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. A
