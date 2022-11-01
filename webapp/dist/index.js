@@ -3706,4 +3706,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_equal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/equal */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/equal.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, sof
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_equal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/equal */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/equal.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.equal = function (b) {\n    this.throwIfDisposed();\n    return Object(_ops_equal__WEBPACK_IMPORTED_MODULE_0__[\"equal\"])(this, b);\n};\n//# sourceMappingURL=equal.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/equal.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/floorDiv.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/floorDiv.js ***!
+  \********************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_floorDiv__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/floorDiv */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/floorDiv.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.floorDiv = function (b) {\n    this.throwIfDisposed();\n    return Object(_ops_floorDiv__WEBPACK_IMPORTED_MODULE_0__[\"floorDiv\"])(this, b);\n};\n//# sourceMappingURL=floorDiv.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/floorDiv.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/greater.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/greater.js ***!
+  \*******************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_greater__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/greater */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/greater.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\
