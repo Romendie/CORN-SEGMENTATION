@@ -3778,4 +3778,24 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_less_equal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/less_equal */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/less_equal.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_mo
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_less_equal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/less_equal */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/less_equal.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.lessEqual = function (b) {\n    this.throwIfDisposed();\n    return Object(_ops_less_equal__WEBPACK_IMPORTED_MODULE_0__[\"lessEqual\"])(this, b);\n};\n//# sourceMappingURL=less_equal.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/less_equal.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/local_response_normalization.js":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/local_response_normalization.js ***!
+  \****************************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_local_response_normalization__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/local_response_normalization */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/local_response_normalization.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.localResponseNormalization = function (depthRadius, bias, alpha, beta) {\n    this.throwIfDisposed();\n    return Object(_ops_local_response_normalization__WEBPACK_IMPORTED_MODULE_0__[\"localResponseNormalization\"])(this, depthRadius, bias, alpha, beta);\n};\n//# sourceMappingURL=local_response_normalization.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/local_response_normalization.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/mat_mul.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/mat_mul.js ***!
+  \*******************************************************************************/
+/*! no e
