@@ -4018,4 +4018,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_space_to_batch_nd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/space_to_batch_nd */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/space_to_batch_nd.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an 
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_space_to_batch_nd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/space_to_batch_nd */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/space_to_batch_nd.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.spaceToBatchND = function (blockShape, paddings) {\n    this.throwIfDisposed();\n    return Object(_ops_space_to_batch_nd__WEBPACK_IMPORTED_MODULE_0__[\"spaceToBatchND\"])(this, blockShape, paddings);\n};\n//# sourceMappingURL=space_to_batch_nd.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/space_to_batch_nd.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/split.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/split.js ***!
+  \*****************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_split__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/split */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/split.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All Rights Reserved.\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n * http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n * =============================================================================\n */\n\n\n_tensor__WEBPACK_IMPORTED_MODULE_1__[\"Tensor\"].prototype.split = function (numOrSizeSplits, axis) {\n    this.throwIfDisposed();\n    return Object(_ops_split__WEBPACK_IMPORTED_MODULE_0__[\"split\"])(this, numOrSizeSplits, axis);\n};\n//# sourceMappingURL=split.js.map\n\n//# sourceURL=webpack:///./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/split.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/squared_difference.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@tensorflow/tfjs-core/dist/public/chained_ops/squared_difference.js ***!
+  \******************************************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ops_squared_difference__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ops/squared_difference */ \"./node_modules/@tensorflow/tfjs-core/dist/ops/squared_difference.js\");\n/* harmony import */ var _tensor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tensor */ \"./node_modules/@tensorflow/tfjs-core/dist/tensor.js\");\n/**\n * @license\n * Copyright 2020 Google LLC. All 
