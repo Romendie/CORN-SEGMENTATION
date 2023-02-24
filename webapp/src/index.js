@@ -144,4 +144,13 @@ const resizeItems = async() => {
   /* Figure out the positioning of the deep fake */
   deepFakeImage.style.marginTop = monaLisaWithFrame.clientHeight * headTopRatio +   "px";
   // Calculate the margin left with respect to the width of the picture
-  deepFakeImage.style.marginLeft = monaLisaWithFrame.
+  deepFakeImage.style.marginLeft = monaLisaWithFrame.width * marginLeftRatio  + "px";
+}
+
+window.addEventListener('resize', resizeItems);
+
+
+
+// Pre-fetch all of the images for a smoother experience
+preload(image_paths);
+setupPage();
